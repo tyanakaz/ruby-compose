@@ -2,5 +2,5 @@
 
 ```
 docker-compose build
-docker-compose run ruby ruby {FILE}
+docker-compose run ruby ruby {FILE}.rb
 ```
