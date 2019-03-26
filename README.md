@@ -1,2 +1,6 @@
 # ruby-compose
-# learning-ruby
+
+```
+docker-compose build
+docker-compose run ruby ruby {FILE}
+```
