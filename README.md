@@ -1,6 +1,16 @@
 # ruby-compose
 
+## Build
 ```
 docker-compose build
-docker-compose run ruby ruby {FILE}.rb
+```
+
+## コンテナにログイン
+```
+docker-compose run ruby bash
+```
+
+## 実行（ログイン配下）
+```
+ruby test.rb
 ```

@@ -1,1 +1,3 @@
-FROM ruby:2.6.0-rc2-alpine3.8
+FROM ruby:2.6.2
+ADD ./ruby /usr/src/ruby
+WORKDIR /usr/src/ruby
