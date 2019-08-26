@@ -1,14 +1,25 @@
-class ExecutionTest
+class ParameterTest
+
+  @@test = "クラス変数"
+
   def initialize(test)
-    @@test = test
-    puts @@test
+    @test = test
   end
 
-  def check
-    puts @@test
+  def display(s)
+    puts s
+  end
+
+  def display_class_parameter
+    display @@test
+  end
+
+  def display_instance_parameter
+    display @test
   end
 end
 
-test = ExecutionTest.new("ok")
+parameter_test = ParameterTest.new("インスタンス変数")
 
-test.check
+parameter_test.display_class_parameter
+parameter_test.display_instance_parameter
